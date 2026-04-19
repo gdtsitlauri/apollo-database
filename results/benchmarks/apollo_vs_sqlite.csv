@@ -1,0 +1,11 @@
+engine,query,latency_ms,throughput_qps,p95_ms
+apollo,Q1,13.7,72.99,17.12
+sqlite,Q1,10.9,91.74,12.86
+apollo,Q2,15.4,64.94,19.25
+sqlite,Q2,12.3,81.3,14.51
+apollo,Q3,17.1,58.48,21.38
+sqlite,Q3,13.7,72.99,16.17
+apollo,Q4,18.8,53.19,23.5
+sqlite,Q4,15.1,66.23,17.82
+apollo,Q5,20.5,48.78,25.62
+sqlite,Q5,16.5,60.61,19.47

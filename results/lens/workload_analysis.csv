@@ -1,0 +1,4 @@
+table,hotness,slowest_pattern,avg_latency_ms,recommended_index
+users,2,SELECT,12.8,idx_users_hot
+orders,3,AGGREGATE,34.47,idx_orders_hot
+events,1,SELECT,55.0,idx_events_hot

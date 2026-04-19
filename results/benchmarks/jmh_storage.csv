@@ -1,0 +1,4 @@
+experiment,variant,ops_per_sec
+btree_insert,order_4,5488.34
+btree_insert,order_8,5982.38
+btree_insert,order_16,6939.4

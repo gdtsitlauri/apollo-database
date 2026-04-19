@@ -1,0 +1,47 @@
+# Maven build output
+target/
+*.class
+*.jar
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# Claude Code internals
+.claude/
+.codex
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# WAL / DB data files generated at runtime (keep results/ CSVs but not binary state)
+results/showcase/*.wal
+results/showcase/*.db
+*.wal
+*.db

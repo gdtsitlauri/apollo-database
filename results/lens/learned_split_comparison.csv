@@ -1,0 +1,4 @@
+workload,fixed_split_height,learned_split_height,fixed_p95_ms,learned_p95_ms
+uniform,4,4,11.8,11.6
+zipfian,5,4,18.7,14.3
+ascending_hotspot,6,5,21.2,16.1

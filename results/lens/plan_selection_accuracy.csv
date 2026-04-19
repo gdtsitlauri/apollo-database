@@ -1,0 +1,4 @@
+query_family,rule_based_accuracy,learned_accuracy
+single_table_filter,0.72,0.89
+two_way_join,0.64,0.84
+group_by,0.69,0.82
