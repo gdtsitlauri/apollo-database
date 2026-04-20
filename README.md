@@ -10,9 +10,9 @@ Built as a research and educational platform — every subsystem is observable,
 instrumented, and benchmark-ready without depending on any existing database engine.
 
 **Author:** George David Tsitlauri  
-**Affiliation:** Informatics & Telecommunications, University of Thessaly, Greece  
+**Affiliation:** Dept. of Informatics & Telecommunications, University of Thessaly, Greece  
 **Contact:** gdtsitlauri@gmail.com  
-**License:** MIT © 2026
+**Year:** 2026
 
 ---
 
@@ -167,3 +167,15 @@ Compile with: `pdflatex paper/apollo_paper.tex`
 **Name:** `apollo-database`  
 **Description:** *From-scratch relational database engine in Java 17 with ML-learned B+ tree optimization and query planning (APOLLO-LENS). Covers storage, WAL, MVCC, SQL parsing, and a full Volcano-model executor.*  
 **Topics:** `database`, `java`, `b-plus-tree`, `mvcc`, `wal`, `query-optimizer`, `learned-index`, `database-internals`, `research`
+
+## Citation
+
+```bibtex
+@misc{tsitlauri2026apollo,
+  author = {George David Tsitlauri},
+  title  = {APOLLO: A From-Scratch Relational Database Engine with Learned Storage and Query Optimization (APOLLO-LENS)},
+  year   = {2026},
+  institution = {University of Thessaly},
+  email  = {gdtsitlauri@gmail.com}
+}
+```
