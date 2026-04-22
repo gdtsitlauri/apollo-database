@@ -9,12 +9,15 @@ optimization layer called **APOLLO-LENS**.
 Built as a research and educational platform — every subsystem is observable,
 instrumented, and benchmark-ready without depending on any existing database engine.
 
-**Author:** George David Tsitlauri  
-**Affiliation:** Dept. of Informatics & Telecommunications, University of Thessaly, Greece  
-**Contact:** gdtsitlauri@gmail.com  
-**Year:** 2026
 
----
+## Project Metadata
+
+| Field | Value |
+| --- | --- |
+| Author | George David Tsitlauri |
+| Affiliation | Dept. of Informatics & Telecommunications, University of Thessaly, Greece |
+| Contact | gdtsitlauri@gmail.com |
+| Year | 2026 |
 
 ## What's Inside
 
@@ -27,8 +30,6 @@ instrumented, and benchmark-ready without depending on any existing database eng
 | **Showcases** | WAL recovery demo, MVCC version chain demo, query plan comparison |
 | **Benchmarks** | TPC-H style APOLLO vs SQLite, B+ tree throughput, plan selection accuracy |
 | **Paper** | Full VLDB/SIGMOD-style research paper (`paper/apollo_paper.tex`) |
-
----
 
 ## Quick Start
 
@@ -53,8 +54,6 @@ python3 src/python/lens/workload_analysis.py
 # Generate B+ tree visualization
 python3 src/python/visualize/btree_visualizer.py
 ```
-
----
 
 ## Project Structure
 
@@ -84,8 +83,6 @@ apollo-database/
 └── paper/
     └── apollo_paper.tex    # Full VLDB/SIGMOD-style paper
 ```
-
----
 
 ## Key Results
 
@@ -117,8 +114,6 @@ apollo-database/
 
 APOLLO is ~1.3× SQLite — expected for a pure-Java engine vs a C implementation with 20+ years of optimization. The gap leaves clear room for research contributions.
 
----
-
 ## Novel Contribution: APOLLO-LENS
 
 No existing open-source Java framework combines from-scratch database internals with
@@ -131,8 +126,6 @@ ML-learned optimization. APOLLO-LENS trains on recorded workloads to:
 The Java engine and Python ML layer communicate through a simple lookup table / ONNX
 interface (`com.apollo.lens.LensModel`), making the ML part optional and swappable.
 
----
-
 ## Tests
 
 ```
@@ -143,8 +136,6 @@ Coverage includes: B+ tree insert/search/split, heap file CRUD, WAL recovery,
 MVCC isolation, snapshot isolation (no phantom reads), deadlock detection,
 rollback/savepoints, SQL parsing, sequential scan, index scan, join, aggregate,
 ORDER BY + LIMIT.
-
----
 
 ## Paper
 
@@ -160,22 +151,10 @@ ORDER BY + LIMIT.
 
 Compile with: `pdflatex paper/apollo_paper.tex`
 
----
-
 ## Recommended Repository Info
 
 **Name:** `apollo-database`  
 **Description:** *From-scratch relational database engine in Java 17 with ML-learned B+ tree optimization and query planning (APOLLO-LENS). Covers storage, WAL, MVCC, SQL parsing, and a full Volcano-model executor.*  
 **Topics:** `database`, `java`, `b-plus-tree`, `mvcc`, `wal`, `query-optimizer`, `learned-index`, `database-internals`, `research`
 
-## Citation
 
-```bibtex
-@misc{tsitlauri2026apollo,
-  author = {George David Tsitlauri},
-  title  = {APOLLO: A From-Scratch Relational Database Engine with Learned Storage and Query Optimization (APOLLO-LENS)},
-  year   = {2026},
-  institution = {University of Thessaly},
-  email  = {gdtsitlauri@gmail.com}
-}
-```
